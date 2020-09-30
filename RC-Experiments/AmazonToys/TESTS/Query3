@@ -1,0 +1,7 @@
+../T1.data;T2.data;5;any
+(1,and,2),and,((3,and,4),or,5)
+category;category;=;0
+product;product;=;0
+stock;stock;>=;0
+price;price;<=;0
+price;price;<=;0.5;*

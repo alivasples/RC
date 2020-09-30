@@ -1,0 +1,32 @@
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+sh 02RunQuery1.sh
+
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+sh 02RunQuery2.sh
+
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
+sh 02RunQuery3.sh
