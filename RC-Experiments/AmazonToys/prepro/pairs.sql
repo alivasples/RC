@@ -1,4 +1,4 @@
--- Create a table to store pair of sellers with eual products
+-- CREATE A TABLE TO STORE PAIR OF SELLERS WITH EQUAL PRODUCTS
 DROP TABLE IF EXISTS Pairs;
 CREATE TABLE Pairs(
 	id1 INT
@@ -29,6 +29,33 @@ INNER JOIN T1 AS S2
     AND S1.category = S2.category
 ;
 
+-- CREATE A TABLE TO STORE PAIRS OF PACK SUPPLIERS
+DROP TABLE IF EXISTS PackSellers;
+CREATE TABLE PackSellers(
+	idPack INT
+	, seller1 VARCHAR(136)
+	, seller2 VARCHAR(136)
+	, nrCommonProds INT
+	, INDEX(idPack)
+	, INDEX(seller1)
+	, INDEX(seller2)
+);
+
+-- Populate the table
+set @counter=-1;
+INSERT INTO PackSellers
+SELECT @counter:=@counter+1 AS idPack, PackSellers.* 
+FROM
+(
+    SELECT seller1, seller2, COUNT(*) nrSameProducts
+    FROM Pairs
+    GROUP BY seller1, seller2
+    HAVING COUNT(*) > 4
+) AS PackSellers
+;
+
+
+-- SOME QUERIES
 -- Select the more repeated products
 SELECT product1, COUNT(*) repeats
 FROM Pairs
@@ -67,3 +94,12 @@ WHERE EXISTS
 GROUP BY idGroup, seller
 HAVING COUNT(*) = 2 -- Need to be the size of T2 when "For All" or > 0 when "For Any"
 ;
+
+
+-- SELECT GROUPS OF COMMON PRODUCTS FROM 2 DIFFERENT SELLERS
+SELECT SE.idPack, SE.nrCommonProds, PR.id1, PR.product1, PR.seller1, PR.seller2
+FROM PackSellers AS SE
+INNER JOIN Pairs AS PR
+    ON PR.seller1 = SE.seller1 
+    AND PR.seller2 = SE.seller2
+ORDER BY idPack
