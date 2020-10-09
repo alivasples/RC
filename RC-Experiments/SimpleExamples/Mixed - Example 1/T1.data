@@ -1,0 +1,12 @@
+ATT1(string,10);ATT2(string,10);ATT3(float,1);ATT4(float,1);ATT5(float,1);
+a;hello;30;150;5
+a;hi;10;50;2
+a;oi;50;300;0
+b;ola;10;50;0
+b;hello;20;300;20
+b;hi;10;300;0
+c;bye;40;5;9
+c;ola;50;400;0
+d;oi;10;50;0
+d;hi;20;150;2
+e;oi;20;500;0

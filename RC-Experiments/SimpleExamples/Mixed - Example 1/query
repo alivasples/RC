@@ -1,0 +1,6 @@
+T1.data;T2.data;4;any
+(1,and,2),or,(3,and,4)
+ATT2;ATT2;=;0
+ATT3;ATT3;euclidian;0.1
+ATT4;ATT4;<;0
+ATT5;ATT5;>;0

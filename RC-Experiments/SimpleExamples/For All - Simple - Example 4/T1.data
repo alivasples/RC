@@ -1,0 +1,9 @@
+ATT1(string,10);ATT2(float,1);ATT3(string,10)
+hola;1;a
+chau;2;a
+hello;3;a
+bye;1;b
+ate;2;b
+hi;2;c
+chau;3;c
+hola;4;c
