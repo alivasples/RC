@@ -646,10 +646,12 @@ void TApp::FTSDivision()
 					}
 					// Simple string attribute
 					else{
-						if(attribute.comparator == "=" and values == attsSimpleStringObjects[currentAtt][currentReq]){
+						string reqValue = attsSimpleStringObjects[currentAtt][currentReq];
+						if(attribute.comparator == "=" and values == reqValue){
 							matchReqs[currentAtt] = true;
 						}
 						else matchReqs[currentAtt] = false;
+//						DEBUG_MSG("-->[" << values << "] " << attribute.comparator << " [" << reqValue << "] = " << matchReqs[currentAtt] << endl);
 					}
 				}
 				// When Attribute is complex
@@ -690,6 +692,7 @@ void TApp::FTSDivision()
 			}// End For (every query of attributes t[Ai],t[Bi])
 
 			// Compute a complete condition. Example: 1,or,(2,and,3)
+			DEBUG_MSG("Reqs: " << matchReqs << endl);
 			matchReq = operationList.getOperationResult(matchReqs);
 			// If the requeriment have match
 			if(matchReq){

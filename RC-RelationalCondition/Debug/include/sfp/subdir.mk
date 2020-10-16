@@ -17,7 +17,7 @@ OBJS += \
 include/sfp/%.o: ../include/sfp/%.cc
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I/home/alexis/Documentos/PROJECTS/RC-AllCodes/Utils/arboretum/include -I"/home/alexis/Documentos/PROJECTS/RC-AllCodes/RC-RelationalCondition/src" -I"/home/alexis/Documentos/PROJECTS/RC-AllCodes/RC-RelationalCondition/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -I/home/alivasples/Documentos/PROJECTS/RC-AllCodes/Utils/arboretum/include -I"/home/alivasples/Documentos/PROJECTS/RC-AllCodes/RC-RelationalCondition/src" -I"/home/alivasples/Documentos/PROJECTS/RC-AllCodes/RC-RelationalCondition/include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
