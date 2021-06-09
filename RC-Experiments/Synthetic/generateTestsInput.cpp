@@ -201,7 +201,7 @@ void reinitValues(){
 	toDistribution = "UNIFORM";	
 	nrReqAtts = 2;
 	reqAtts = "";
-	percentage = 0.5;
+	percentage = 1; // of simple atts. 0.5 means half simple and half complex
 	threshold = 0.25;
 	generateRandomAtts();
 }
@@ -376,8 +376,8 @@ int main(){
 	generateVarGroups(11,110,100);
 	reinitValues();
 	generateVarReqAtts(2,100,50);
-	reinitValues();
-	generateVarThreshold(1,100,50);
+	//reinitValues();
+	//generateVarThreshold(1,100,50);
 	
 	reinitValues();
 	generateVarGDistribution();
