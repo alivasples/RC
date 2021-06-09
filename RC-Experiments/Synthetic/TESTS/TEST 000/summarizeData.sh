@@ -13,9 +13,9 @@ cd ..
 cd VarL1L2/
 sh summarizeData.sh
 cd ..
-cd VarThreshold/
-sh summarizeData.sh
-cd ..
+#cd VarThreshold/
+#sh summarizeData.sh
+#cd ..
 cd VarDistribution/
 sh summarizeData.sh
 cd ..

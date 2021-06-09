@@ -13,9 +13,9 @@ cd ..
 cd L1L2/
 sh createIndexes.sh
 cd ..
-cd VarThreshold/
-sh createIndexes.sh
-cd ..
+#cd VarThreshold/
+#sh createIndexes.sh
+#cd ..
 cd VarDistribution/
 sh createIndexes.sh
 cd ..

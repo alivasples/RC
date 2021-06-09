@@ -13,9 +13,9 @@ cd ..
 cd VarL1L2/
 sh createTestCases.sh
 cd ..
-cd VarThreshold/
-sh createTestCases.sh
-cd ..
+#cd VarThreshold/
+#sh createTestCases.sh
+#cd ..
 cd VarDistribution/
 sh createTestCases.sh
 cd ..

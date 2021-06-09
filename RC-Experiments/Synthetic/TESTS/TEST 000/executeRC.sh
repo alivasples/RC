@@ -13,9 +13,9 @@ cd ..
 cd VarL1L2/
 sh executeRC.sh
 cd ..
-cd VarThreshold/
-sh executeRC.sh
-cd ..
+#cd VarThreshold/
+#sh executeRC.sh
+#cd ..
 cd VarDistribution/
 sh executeRC.sh
 cd ..
