@@ -10,7 +10,7 @@ cd ..
 cd VarValidGroups/
 sh createIndexes.sh
 cd ..
-cd L1L2/
+cd VarL1L2/
 sh createIndexes.sh
 cd ..
 #cd VarThreshold/
