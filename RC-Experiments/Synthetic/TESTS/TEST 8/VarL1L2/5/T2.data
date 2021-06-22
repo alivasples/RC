@@ -1,0 +1,6 @@
+ATT0(float,1);ATT1(string,3);ATT2(string,7);ATT3(float,1);ATT4(string,3);ATT5(string,7);ATT6(float,1);ATT7(string,9);ATT8(string,2);ATT9(float,1);
+0.325;a;aaa;0.641;aa;aaaaaa;0.166;aaaaaaaa;aa;0.642;
+0.00221;a;aaaa;0.984;aaa;a;0.633;aa;a;0.231;
+0.641;aaa;aaaaa;0.671;aa;a;0.425;aaaaaa;a;0.92;
+0.818;aa;aaaaaaa;0.204;a;aaa;0.941;aaa;aa;0.623;
+0.872;aaa;a;0.83;aaa;aaaa;0.712;aaaaa;aa;0.873;
