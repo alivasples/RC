@@ -1,6 +1,6 @@
 #!/bin/bash
-maxCase=10
-for ((iCase = 2; iCase <= maxCase; iCase++))
+maxCase=20
+for ((iCase = 12; iCase <= maxCase; iCase++))
 do
    cp -a "TEST 000"/. "TEST $iCase"
    cd "TEST $iCase"
